@@ -1,0 +1,17 @@
+{
+  "name": "vite-petite-vue-starter",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^2.9.9",
+    "vite-plugin-html": "^3.2.0"
+  },
+  "dependencies": {
+    "petite-vue": "^0.4.1"
+  }
+}
