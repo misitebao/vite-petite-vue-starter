@@ -1,4 +1,4 @@
-import path from "path";
+import { fileURLToPath, URL } from "url";
 
 import { defineConfig } from "vite";
 import { createHtmlPlugin } from "vite-plugin-html";
@@ -33,7 +33,7 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "src"),
+      "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
   build: {
