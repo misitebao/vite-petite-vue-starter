@@ -5,9 +5,15 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint src",
+    "lint:fix": "npm run lint -- --fix"
   },
   "devDependencies": {
+    "eslint": "^8.18.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.1.0",
+    "prettier": "^2.7.1",
     "vite": "^2.9.9",
     "vite-plugin-html": "^3.2.0"
   },

@@ -1,7 +1,7 @@
-import { fileURLToPath, URL } from "url";
+import { fileURLToPath, URL } from 'url';
 
-import { defineConfig } from "vite";
-import { createHtmlPlugin } from "vite-plugin-html";
+import { defineConfig } from 'vite';
+import { createHtmlPlugin } from 'vite-plugin-html';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -11,20 +11,20 @@ export default defineConfig({
       pages: [
         {
           // entry: "src/main.ts",
-          filename: "index.html",
-          template: "index.html",
+          filename: 'index.html',
+          template: 'index.html',
           injectOptions: {
             data: {
-              title: "Index",
+              title: 'Index',
             },
           },
         },
         {
-          filename: "about.html",
-          template: "about.html",
+          filename: 'about.html',
+          template: 'about.html',
           injectOptions: {
             data: {
-              title: "About",
+              title: 'About',
             },
           },
         },
@@ -33,7 +33,7 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      "@": fileURLToPath(new URL("./src", import.meta.url)),
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
   build: {
